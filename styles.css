@@ -761,7 +761,7 @@ body{
   .navbar { padding: 12px 18px; }
   .contact-container { flex-direction: column; gap: 18px; padding: 0 12px; }
 }
-/* Target ~412x915 mobile (tighten layout & sizes) */
+
 @media (max-width: 420px) and (max-height: 920px) {
   /* Page/frame */
   body { padding: 12px; }
