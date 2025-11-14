@@ -149,7 +149,7 @@ body{
 }
 /* ABOUT SECTION */
 .about{
-  padding:100px 200px;
+  padding:100px 320px !important;
   background:#fff;
 }
 .about-inner{
@@ -629,7 +629,7 @@ body{
 .contact-info {
   flex: 1;
   min-width: 300px;
-  font-size: 17px;
+  font-size: 24px;
   text-align: left;
   color: #374151;
 }
