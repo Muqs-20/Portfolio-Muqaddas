@@ -700,78 +700,154 @@ body{
 }
 /* Mobile-Responsive */
 
-@media (max-width: 1100px) {
-  .about { padding: 80px 40px; }
-  .portfolio, .toolkit { padding: 80px 40px; }
-  .navbar { padding: 15px 40px; }
+@media(max-width:576px){
+body {
+  padding: 12px; 
+}
+.navbar{
+  padding: 10px 14px;
+}
+.logo{
+  font-size: 16px;
+}
+.nav-link{
+  display: none;
+}
+/*her-section*/
+.hero{
+  padding: 40px 12px;
+}
+.badge{
+  font-size: 13px;
+  padding: 4px 10px;
+}
+.hero h1{
+  font-size: 28px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+/*about section*/
+.about{
+  padding: 40px 12px;
+
+}
+.about > .section-label{
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.about > .section-title{
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+.about-inner{
+  flex-direction: column;
+  gap:18px;
+  padding:0;
+  max-width:100%;
+  margin: 0%;
+}
+.about-left, .about-right{
+  width: 100%;
+  min-width: 0;
+}
+.about-left{
+  text-align: left;
+}
+.about-text{
+  font-size:15px;
+  line-height:1.6;
+  max-width:100%;
+}
+.about-stats{
+  margin-top:18px;
+}
+.about-card{
+  padding:14px;
+  border-radius:12px;
+  gap:12px;
+}
+.about-card .icon i {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+.about-card .info h4{
+  font-size:16px;
+}
+.about-card .info p{
+  font-size:14px;
+}
+/*portfolio section*/
+.portfolio{
+  padding:30px 12px;
+}
+.portfolio-container{
+  grid-template-columns: 1fr;
+  gap:18px;
+  padding:0;
+}
+.project-card img{
+  height:180px; 
+}
+/*toolkit/skills section*/
+.toolkit{   
+  padding:30px 12px;
+}
+.skills-container{
+  grid-template-columns: 1fr;
+  gap:14px; 
+}
+.icon-wrapper{
+  width:44px;
+  height:44px;
+}
+.icon-wrapper i{
+  font-size:20px;
+}
+.testimonials{
+  padding:30px 12px;
+}
+.testimonial-card{
+  padding:20px;
+  margin:20px 0;
 }
 
-@media (max-width: 900px) {
-  /* hero */
-  .hero { padding: 60px 20px; }
-  .hero h1 { font-size: 36px; }
-  .hero p { max-width: 92%; margin: 0 auto 30px; }
-
-  /* general container/padding adjustments */
-  .about { padding: 60px 20px; }
-  .portfolio { padding: 60px 20px; }
-  .toolkit { padding: 60px 20px; }
-
-  /* about section: stack columns, center title above columns */
-  .about > .section-label,
-  .about > .section-title { text-align: center; display: block; margin-left: 0; margin-right: 0; }
-  .about-inner { flex-direction: column; gap: 32px; align-items: stretch; margin-top: 18px; }
-  .about-left, .about-right { flex: 1 1 100%; min-width: 0; }
-  .about-left { text-align: left; }
-  .about-right { width: 100%; display: flex; flex-direction: column; gap: 16px; }
-
-  /* cards and icons */
-  .about-card { padding: 18px; }
-  .about-card .icon i { width: 36px; height: 36px; font-size: 20px; border-radius: 10px; }
-
-  /* portfolio / projects */
-  .portfolio-container { grid-template-columns: 1fr; gap: 28px; padding: 0 8px; }
-
-  /* toolkit / skills */
-  .skills-container { grid-template-columns: repeat(2, 1fr); gap: 18px; }
-  .skill-card { padding: 16px; }
-  .icon-wrapper { width: 44px; height: 44px; border-radius: 10px; }
-  .icon-wrapper i { font-size: 20px; }
-
-  /* hero buttons stack */
-  .hero-buttons { flex-direction: column; gap: 12px; }
-  .btn { width: 100%; text-align: center; }
-
-  /* scroll indicator */
-  .scroll-indicator i { width: 36px; height: 36px; font-size: 20px; }
-
-  /* tighten global spacing */
-  body { padding: 16px; }
+.contact{
+  padding:30px 12px;
+}
+.contact-container{
+  flex-direction: column;
+  gap:14px;
+  padding:0;
+}
+.contact-form{
+  padding:20px;
+  width:100%;
 }
 
-@media (max-width: 600px) {
-  .hero h1 { font-size: 28px; }
-  .section-title { font-size: 28px; }
-  .about { padding: 40px 18px; }
-  .portfolio, .toolkit { padding: 40px 18px; }
-  .about-inner { gap: 28px; }
-  .skills-container { grid-template-columns: 1fr; }
-  .skill-header h4 { font-size: 1rem; }
-  .progress-bar { height: 8px; }
-  .navbar { padding: 12px 18px; }
-  .contact-container { flex-direction: column; gap: 18px; padding: 0 12px; }
+.scroll-indicator i{
+  width:34px;
+  height:34px;
+  font-size:18px;
+}
 }
 
-@media (max-width: 420px) and (max-height: 920px) {
-  /* Page/frame */
+
+
+
+
+/*@media (max-width: 420px) and (max-height: 920px) {
+  /* Page/frame 
   body { padding: 12px; }
 
-  /* Navbar */
+  /* Navbar 
   .navbar { padding: 10px 14px; }
   .logo { font-size: 16px; }
   .nav-links { display: none; }
 
-  /* Hero */
+  /* Hero 
   .hero { padding: 40px 12px; }
   .badge { font-size: 13px; padding: 4px 12px; }
   .hero h1 { font-size: 28px; line-height: 1.15; margin-bottom: 14px; }
@@ -779,7 +855,7 @@ body{
   .hero-buttons { flex-direction: column; gap: 10px; }
   .btn { width: 100%; padding: 10px 12px; font-size: 15px; }
 
-  /* About section */
+  /* About section 
   .about { padding: 30px 14px; }
   .about > .section-label { text-align: center; font-size: 13px; margin-bottom: 8px; }
   .about > .section-title { text-align: center; font-size: 28px; margin-bottom: 18px; }
@@ -791,7 +867,7 @@ body{
   .about-stats { margin-top: 18px; }
   .stat { font-size: 14px; gap: 8px; }
 
-  /* Cards */
+  /* Cards 
   .about-card { padding: 14px; border-radius: 12px; gap: 12px; }
   .about-card .icon i {
     width: 36px;
@@ -804,28 +880,28 @@ body{
   .about-card .info h4 { font-size: 16px; }
   .about-card .info p { font-size: 14px; }
 
-  /* Portfolio */
+  /* Portfolio
   .portfolio { padding: 30px 12px; }
   .portfolio-container { grid-template-columns: 1fr; gap: 18px; padding: 0; }
   .project-card img { height: 119px; } /* requested size */
 
-  /* Toolkit / skills */
+  /* Toolkit / skills 
   .toolkit { padding: 30px 12px; }
   .skills-container { grid-template-columns: 1fr; gap: 14px; }
   .skill-card { padding: 14px; }
   .icon-wrapper { width: 44px; height: 44px; }
   .icon-wrapper i { font-size: 20px; }
 
-  /* Testimonials */
+  /* Testimonials 
   .testimonials { padding: 30px 12px; }
   .testimonial-card { padding: 20px; margin: 20px 0; }
 
-  /* Contact */
+  /* Contact 
   .contact { padding: 30px 12px; }
   .contact-container { flex-direction: column; gap: 14px; padding: 0; }
   .contact-form { padding: 20px;  width: 100%; }
 
-  /* Misc */
+  /* Misc 
   .scroll-indicator i { width: 34px; height: 34px; font-size: 18px; }
   .section-title, .section-label, .hero h1 { -webkit-font-smoothing: antialiased; }
-}
+}*/
