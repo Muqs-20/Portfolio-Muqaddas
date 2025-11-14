@@ -823,7 +823,7 @@ body{
   /* Contact */
   .contact { padding: 30px 12px; }
   .contact-container { flex-direction: column; gap: 14px; padding: 0; }
-  .contact-form { padding: 20px; min-width: 0; width: 100%; }
+  .contact-form { padding: 20px;  width: 100%; }
 
   /* Misc */
   .scroll-indicator i { width: 34px; height: 34px; font-size: 18px; }
